@@ -21,7 +21,7 @@
 |---|---|
 | Менеджер паролей | Bitwarden Desktop 2026.10.0 (macOS), веб-хранилище `vault.bitwarden.com`, расширение для Chrome |
 | Тариф | Free (бесплатный) |
-| Генерация TOTP | Bitwarden Authenticator на телефоне |
+| Генерация TOTP | Google Authenticator на телефоне |
 | Проверка утечек | https://haveibeenpwned.com/ (только email) и отчёт Data breach report в Bitwarden |
 | ОС | macOS 15.7 |
 
@@ -37,7 +37,7 @@ brew install --cask bitwarden
 ```
 
 Также установлено браузерное расширение Bitwarden для Chrome и приложение
-Bitwarden Authenticator на телефон.
+Google Authenticator на телефон.
 
 ![Официальная страница загрузки Bitwarden](docs/screenshots/01-bitwarden-download.png)
 
@@ -179,7 +179,7 @@ Two-factor authentication → Authenticator app**.
 
 1. GitHub показал QR-код с секретным ключом. Ключ закодирован в URI
    `otpauth://totp/...`.
-2. QR-код отсканирован приложением Bitwarden Authenticator на телефоне.
+2. QR-код отсканирован приложением Google Authenticator на телефоне.
    Приложение стало каждые 30 секунд выдавать 6-значный код.
 3. Текущий код введён в GitHub для подтверждения.
 4. Коды восстановления (recovery codes) скачаны и сохранены в Bitwarden как
@@ -193,8 +193,6 @@ Two-factor authentication → Authenticator app**.
 > держит второй фактор на другом устройстве, отдельно от пароля.
 
 ![Настройка 2FA на GitHub (QR-код замазан)](docs/screenshots/11-github-2fa-setup.png)
-
-![Bitwarden Authenticator с кодом для GitHub](docs/screenshots/12-authenticator-app.png)
 
 ![GitHub: 2FA включена через приложение-аутентификатор](docs/screenshots/13-github-2fa-enabled.png)
 
